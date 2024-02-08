@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> DO IT NOW </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <div class="background">
+    <div class="content-container">
+      <h1> <ion-icon name="create"></ion-icon> DO IT NOW </h1>
+      <div style="margin-top: 30px;">
+      <h2>Tu lista de tareas personal</h2>
+      <div style="margin-top: 30px;">
+      <p>Te ayudaré a recordar y organizar tus tareas diarias</p>
+      <div style="margin-top: 80px;">
+      <ion-button expand="full" color="secondary" (click)="startClicked()"
+        >Agregar una tarea</ion-button
+    >
+    <ion-button expand="full" color="success" (click)="compartirEnWhatsApp()"
+        >Recomiendanos en Whatsapp</ion-button
+      >
+      <div class="alert" expand="full" *ngIf="openAlert"
+      div style="display: flex; align-items: center; justify-content: center; height: 60%; font-weight: 200; color:rgb(34, 96, 116); background-color: transparent;">
+        Gracias por compartirnos!
+      </div>
+
+    <dialog method="modal" #dialog>
+      <p>Disfrutas nuestra app?</p>
+      <div>
+        <button (click)="valoranos()"><span>Si</span></button>
+        <button (click)="no()"><span>No</span></button>
+      </div>
+    </dialog>
+
+    </div>
+  </div>
+  </div>
+    </div>
+  </div>
+</ion-content>
+
+
